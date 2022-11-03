@@ -117,7 +117,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.copy);
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(-8, -23);
+            this.tabControl1.Location = new System.Drawing.Point(-8, -27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(517, 579);
@@ -272,7 +272,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(164, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(159, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(176, 66);
             this.pictureBox3.TabIndex = 3;
@@ -288,7 +288,7 @@
             this.versiontxt.BackColor = System.Drawing.Color.Transparent;
             this.versiontxt.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.versiontxt.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.versiontxt.ForeColor = System.Drawing.Color.White;
+            this.versiontxt.ForeColor = System.Drawing.Color.Black;
             this.versiontxt.Location = new System.Drawing.Point(3, 527);
             this.versiontxt.Name = "versiontxt";
             this.versiontxt.Size = new System.Drawing.Size(503, 23);
@@ -324,6 +324,7 @@
             this.flatButton3.TabIndex = 6;
             this.flatButton3.Text = "Exit";
             this.flatButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.flatButton3.Click += new System.EventHandler(this.flatButton3_Click);
             // 
             // Form1
             // 
@@ -332,8 +333,12 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(501, 545);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Installer";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
